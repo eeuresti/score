@@ -1,27 +1,28 @@
 <div class="container">
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th></th>
-        <th>Name</th>
-        <th>Matched on</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row"><%= image_tag "dog.jpg", size: "30x30" %></th>
-        <td>Username</td>
-        <td>05-22-2015</td>
-        <td class="text-right">
-          <a href="" data-toggle="tooltip" data-placement="top" title="Get Email"><i class="fa fa fa-envelope"></i></a>
-          <a href="" data-toggle="tooltip" data-placement="top" title="Unmatch"><i class="fa fa fa-times"></i></a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Name</th>
+				<th>Matched on</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<%= render partial: "match", collection: @matches %>
+		</tbody>
+	</table>
+
 
 </div>
+
+
+<script type="text/javascript">
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip();
+	});
+</script>
 
 <script type="text/javascript">
   $(function(){

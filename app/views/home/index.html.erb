@@ -1,11 +1,11 @@
 <div class="bg-dark"></div>
 
 <div class="home-information">
-  <h1 class="slogan">Love is only a swipe away</h1>
-    <%= link_to "auth/facebook", class: "btn btn-social btn-lg btn-facebook" do %>
-    <i class="fa fa-facebook"></i>Sign in with Facebook
-  <% end %>
-  <br /><br />
+	<h1 class="slogan">Any swipe can change your life</h1>
+	<%= link_to "auth/facebook", class: "btn btn-social btn-lg btn-facebook" do %>
+		<i class="fa fa-facebook"></i> Sign in with Facebook
+	<% end %>
+	<br /><br />
 </div>
 
 
@@ -13,24 +13,17 @@
 
 <script type="text/javascript">
 
-jQuery(function(s) {
-
-  $.supersized({
-    slide_interval    : 4000,
-    transition        : 1,
-    transition-speed  : 700,
-    slide-links       : 'blank',
-
-    slides            : [
-
-        {image : 'app/assets/images/bg.jpg'},
-        {image : 'app/assets/images/bg2.jpg'},
-        {image : 'app/assets/images/bg3.jpg'}
-
-    ]
-
-  });
-
+jQuery(function($) {
+	$.supersized({
+		slide_interval   :   4000,
+		transition       :   1,
+		transition_speed : 700,
+		slinde_links     : 'blank',
+		slides           : [
+			{image : '<%= image_url("bg.jpg") %>'},
+			{image : '<%= image_url("bg2.jpg") %>'},
+			{image : '<%= image_url("bg3.jpg") %>'}
+		]
+	});
 });
-
 </script>

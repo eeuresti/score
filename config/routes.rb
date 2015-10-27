@@ -9,15 +9,20 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'auth/facebook/callback', to: "sessions#create"
-  match 'sign_out', to: "sessions#destroy", via: :delete
+  get   'auth/facebook/callback', to: "sessions#create"
+  match '/sign_out', to: "sessions#destroy", via: :delete
+
+  post   'create_friendship' => "friendships#create"
+  delete 'delete_friendship' => "friendships#destroy"
+
+  get 'matches/get_email' => "users#get_email"
 
   # get 'users/index'
-  #
+
   # get 'users/edit'
-  #
+
   # get 'users/profile'
-  #
+
   # get 'users/matches'
 
   # The priority is based upon order of creation: first created -> highest priority.

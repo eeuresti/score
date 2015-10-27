@@ -6,15 +6,15 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Score
+module Tinstuk
   class Application < Rails::Application
 
     config.paperclip_defaults = {
       :storage => :s3,
       :s3_credentials => {
-         :bucket => "score"['AWS_BUCKET'],
-         :access_key_id => "AKIAIQTXOQ3ZCUX7XSMQ", #ENV['AWS_ACCESS_KEY_ID'],
-         :secret_access_key => "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"#ENV['AWS_SECRET_ACCESS_KEY']
+         :bucket => ENV['AWS_BUCKET'],
+         :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+         :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
       }
     }
 

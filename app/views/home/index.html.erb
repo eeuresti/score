@@ -2,9 +2,9 @@
 
 <div class="home-information">
   <h1 class="slogan">Love is only a swipe away</h1>
-  <a class="btn btn-social btn-lg btn-facebook">
-      <i class="fa fa-facebook"></i>Sign in with Facebook
-  </a>
+    <%= link_to "auth/facebook", class: "btn btn-social btn-lg btn-facebook" do %>
+    <i class="fa fa-facebook"></i>Sign in with Facebook
+  <% end %>
   <br /><br />
 </div>
 
@@ -18,16 +18,17 @@ jQuery(function(s) {
   $.supersized({
     slide_interval    : 4000,
     transition        : 1,
-    transition-speed  :700,
+    transition-speed  : 700,
     slide-links       : 'blank',
 
     slides            : [
 
-        {},
-        {},
-        {}
+        {image : 'app/assets/images/bg.jpg'},
+        {image : 'app/assets/images/bg2.jpg'},
+        {image : 'app/assets/images/bg3.jpg'}
 
     ]
+
   });
 
 });

@@ -45,6 +45,10 @@ group :development do
   gem 'spring'
 end
 
+
 gem 'bootstrap-sass'
 gem "autoprefixer-rails"
 gem 'font-awesome-sass'
+gem 'omniauth-facebook'
+gem "paperclip"
+gem 'aws-sdk', '< 2.o'

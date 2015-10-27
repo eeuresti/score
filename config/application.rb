@@ -8,6 +8,16 @@ Bundler.require(*Rails.groups)
 
 module Score
   class Application < Rails::Application
+
+    config.paperclip_defaults = {
+      :storage => :s3,
+      :s3_credentials => {
+         :bucket => "score"['AWS_BUCKET'],
+         :access_key_id => "AKIAIQTXOQ3ZCUX7XSMQ", #ENV['AWS_ACCESS_KEY_ID'],
+         :secret_access_key => "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"#ENV['AWS_SECRET_ACCESS_KEY']
+      }
+    }
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

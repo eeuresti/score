@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
 	def create
 		auth = request.env["omniauth.auth"]
 		session[:omniauth] = auth
-		user = User.sign_in_from_facebook(auth)
+		user = User.create_user_from_facebook(auth)
 		session[:user_id] = user.id
 		redirect_to root_url, notice: "Signed In"
 	end

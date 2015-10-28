@@ -58,3 +58,5 @@ gem 'data-confirm-modal', github: 'ifad/data-confirm-modal'
 gem "figaro"
 gem 'utf8-cleaner'
 gem "figaro"
+
+ruby "2.2.0"

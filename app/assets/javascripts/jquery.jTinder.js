@@ -9,7 +9,7 @@
  */
 
 
-;(function ($, window, document, undefined) {
+(function ($, window, document, undefined) {
 	var pluginName = "jTinder",
 		defaults = {
 			onDislike: null,
@@ -70,7 +70,7 @@
 			//Custom -> Add more elements if reaching the end!
 		    if( li_count < 2 ) {
 
-		    		if( li_count == 0 ) {
+		    		if( li_count === 0 ) {
 
 		    			    // make an ajax call passing along our last user id
 					        $.ajax({

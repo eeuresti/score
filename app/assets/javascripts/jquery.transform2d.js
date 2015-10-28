@@ -274,8 +274,7 @@ $.fx.step.transform = function( fx ) {
 // turns a transform string into its "matrix(A,B,C,D,X,Y)" form (as an array, though)
 function matrix( transform ) {
 	transform = transform.split(")");
-	var
-			trim = $.trim
+	var trim = $.trim
 		, i = -1
 		// last element of the array is an empty string, get rid of it
 		, l = transform.length -1
@@ -368,8 +367,7 @@ function matrix( transform ) {
 // turns a matrix into its rotate, scale and skew components
 // algorithm from http://hg.mozilla.org/mozilla-central/file/7cb3e9795d04/layout/style/nsStyleAnimation.cpp
 function unmatrix(matrix) {
-	var
-			scaleX
+	var scaleX
 		, scaleY
 		, skew
 		, A = matrix[0]

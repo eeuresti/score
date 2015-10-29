@@ -1,4 +1,4 @@
-// THIS CSS SNINEPP TURNS YOUR WEBPAGES PRINTABLE
+/*// THIS CSS SNINEPP TURNS YOUR WEBPAGES PRINTABLE*/
 
 @media print {
 	* {
@@ -30,12 +30,12 @@
 		content: "";
 	}
 }
-// END PRINT
-// TABS OUTLINE
+/*// END PRINT
+// TABS OUTLINE*/
 .tabs dd > a, .tabs .tab-title > a{
     outline: none;
 }
-// BODY STYLES + FONT STYLES
+/*// BODY STYLES + FONT STYLES*/
 body,html{
 	height:100%;
 	width:100%;
@@ -58,21 +58,21 @@ body,html{
 	-webkit-font-feature-settings: 'lnum';
 	-o-font-feature-settings: 'lnum';
 }
-// END BODY STYLES + END FONT STYLES
-// GENERAL LINKS
+/*// END BODY STYLES + END FONT STYLES
+// GENERAL LINKS*/
 a {
 	transition: all 0.3s ease-out;
 	color: $brand-primary;
 }
-// END GENERAL LINKS
-// TEXT TOOLS
+/*// END GENERAL LINKS
+// TEXT TOOLS*/
 .uppercase {
 	text-transform: uppercase;
 }
 .capitalize {
 	text-transform: capitalize;
 }
-// Colors
+/*// Colors*/
 .white {
 	color: white;
 }
